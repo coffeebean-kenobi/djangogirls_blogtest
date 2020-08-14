@@ -143,5 +143,12 @@ bashに入る
 ```
 $ pip3.7 install --user pythonanywhere
 $ pa_autoconfigure_django.py --python=3.7 https://github.com/coffeebean-kenobi/djangogirls_blogtest.git
+(なぜかうまくいかなかったので--nukeをつけて再度実行)
 ```
+ユーザ作成
+```
+$ python manage.py createsuperuser
+ローカルと同じ
+```
+
 
