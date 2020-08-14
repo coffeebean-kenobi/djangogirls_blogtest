@@ -113,12 +113,10 @@ python manage.py makemigrations blog
 python manage.py migrate blog 
 ```
 管理ユーザー作成
-Username: ola
-Email address: ola@example.com
-Password:olah
-Password (again):olah
-Superuser created successfully.
 
+* Username: ola
+* Email address: ola@example.com
+* Password:olah
 
 ```
 python manage.py createsuperuser
@@ -126,8 +124,24 @@ python manage.py createsuperuser
 http://127.0.0.1:8000/admin/
 で確認、ブログ記事とユーザ作ってみる
 
-ユーザ名：tai
-pass:7uhad8999
+* ユーザ名：tai
+* pass:7uhad8999
 ->パスワードポリシーの変更などどこで？
 
+
+gitにあげる
+```
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/coffeebean-kenobi/djangogirls_blogtest.git
+git push -u origin master
+```
+ pythonanywhere側での設定
+APIトークン作成
+8f1a9e516013a6de11535506528ebb157c8f04fe
+bashに入る
+```
+$ pip3.7 install --user pythonanywhere
+$ pa_autoconfigure_django.py --python=3.7 https://github.com/coffeebean-kenobi/djangogirls_blogtest.git
+```
 
