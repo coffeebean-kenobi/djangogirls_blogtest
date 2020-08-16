@@ -150,5 +150,5 @@ $ pa_autoconfigure_django.py --python=3.7 https://github.com/coffeebean-kenobi/d
 $ python manage.py createsuperuser
 ローカルと同じ
 ```
-
+blog/views.pyはposts = Post.objects.all()としないとだめ
 
